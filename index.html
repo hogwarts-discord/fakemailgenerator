@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="language" content="en-US">
+    <meta http-equiv="content-language" content="en-US">
+    <meta name="distribution" content="global">
+    <title>Fake Mail Generaor - Temporary mail to receive email in 10 seconds</title>
+    <meta name="description" content="Fake mail generator, temp mail, temporary email, 10 minute mail, 10 min mail, disposable email, throwaway email">
+    <link rel="shortcut icon" href="public\en\img\favicon.ico?11">
+    <link rel="stylesheet" href="public\en\css\bootstrap.min.css">
+    <link rel="stylesheet" href="public\en\css\font-awesome.min.css">
+    
+    <link rel="stylesheet" href="public\en\css\index.min.css?20180916">
+    <script src='public\en\js\jquery.min.js' type='text/javascript'></script>
+    <script>
+        let mailbox = "";
+        let dft_mailhost = "@fakemailgenerator.net";
+        let reload_interval = 10000;
+
+        let getMailhost = function () {
+            let mailhost = localStorage.getItem("mailhost");
+            let isValidHost = /^@[a-z0-9]+([-.][a-z0-9]+)*\.[a-z]{2,}$/i.test(mailhost);
+            if (mailhost == "" || mailhost == null || !isValidHost) {
+                mailhost = dft_mailhost;
+            }
+            return mailhost;
+        };
+
+        let initMailAddr = function (mailhost) {
+            localStorage.setItem("mailhost", mailhost);
+            var mailaddr = mailbox + mailhost;
+            jQuery("#active-mail").val(mailaddr);
+            jQuery("#active-mail").attr("data-clipboard-text", mailaddr);
+            
+            $('.dropdown-menu a').show();
+            $('a[data-mailhost="' + mailhost + '"]').hide();
+        };
+
+        let changeMailbox = function () {
+            jQuery.get("/api/v1/mailbox/keepalive?force_change=1&_ts=" + Math.round((new Date()).getTime() / 1000), function (resp) {
+                console.log(resp);
+                
+                
+                location.reload();
+            });
+        };
+
+        
+        let loading = function () {
+            let loading_div = $('#loading-line');
+            $({property: 0}).animate({property: 100}, {
+                duration: 2000,
+                step: function () {
+                    loading_div.css('width', "0%");
+                    loading_div.removeClass("done");
+
+                    var percentage = Math.round(this.property);
+
+                    loading_div.css('width', percentage + "%");
+
+                    if (percentage == 100) {
+                        loading_div.addClass("done");
+                    }
+                }
+            });
+        };
+
+        let ct_second = reload_interval / 1000;
+        let countdown = function () {
+            console.log(ct_second);
+            if (ct_second == 0) {
+                ct_second = reload_interval / 1000;
+                loadList();
+            } else {
+                $("#seconds").html(ct_second);
+                ct_second--;
+            }
+            setTimeout("countdown()", 1000);
+        };
+
+        let loadList = function () {
+            console.log("begin: loadList...");
+            loading();
+            let refresh_row = '<tr>' +
+                    '<td colspan="3" class="text-center">' +
+                    '<img src="/public/en/img/loading.gif" alt="Receiving mails..." />&nbsp;Receiving mails...will be refreshed after <b id="seconds"></b> seconds' +
+                    '</td>' +
+                    '</tr>';
+            let row = '';
+            $.get("/api/v1/mailbox/keepalive", function (resp) {
+                console.log(resp);
+                mailbox = resp.mailbox;
+                initMailAddr(getMailhost());
+                $.ajax({
+                    dataType: "json",
+                    url: '/api/v1/mailbox/' + mailbox,
+                    success: function (data) {
+                        messageListData = data.reverse();
+                        for (i = 0; i < messageListData.length; i++) {
+                            messageListData[i].seenClass = messageListData[i].seen ? '' : 'unseen'
+                            let viewurl = '/mailbox/' + messageListData[i].mailbox + '/' + messageListData[i].id;
+                            row += '<tr>' +
+                                    '<td><a href="' + viewurl + '" title="again">' + messageListData[i].from + '</a></td>\n' +
+                                    '<td><a href="' + viewurl + '" title="again" class="title-subject">' + messageListData[i].subject + '</a></td>' +
+                                    '<td class="text-center"><a href="' + viewurl + '" class="link open"><span class="glyphicon glyphicon-chevron-right"></span></a></td>' +
+                                    '</tr>'
+                        }
+                        row += refresh_row;
+                        $('#message-list').html(row);
+                        console.log("end: loadList...");
+                    }
+                });
+            });
+        };
+
+        let manualRefresh = function () {
+            
+            ct_second = reload_interval / 1000;
+            loadList();
+        };
+
+        
+        let deleteMessage = function (mailbox, id) {
+            $('#message-content').empty();
+            $.ajax({
+                type: 'DELETE',
+                url: '/api/v1/mailbox/' + mailbox + '/' + id,
+                success: function () {
+                    location.href = '/';
+                }
+            });
+            return false;
+        }
+    </script>
+</head>
+<body>
+<section id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h1><a href="index.html"><img src="public\en\img\logo.png" alt="Fake Mail Generaor - Temporary mail to receive email in 10 seconds" class='img-responsive'></a></h1>
+            </div>
+            <div class="col-sm-9 col-md-5 active-mail">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                    <input style="background-color: #fff;" readonly="" spellcheck="false" type="text" class="form-control" value='' data-clipboard-text="" title="Click to copy" id='active-mail'>
+                    <div class="tooltip bottom in" style="top: 36px; left: 115.808px; display: block;">
+                        <div class="tooltip-arrow" style="left: 50%;"></div>
+                        <div class="tooltip-inner" id='copy-title'>Click to copy</div>
+                    </div>
+                    <div class="input-group-btn hidden-xs">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class='visible-lg-inline'>More</span> domains <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="javascript:void(0);" data-mailhost="@fakemailgenerator.net">@fakemailgenerator.net</a></li>
+                            
+                                <li><a href="javascript:void(0);" data-mailhost="@iffymedia.com">@iffymedia.com</a></li>
+                            
+                                <li><a href="javascript:void(0);" data-mailhost="@figurescoin.com">@figurescoin.com</a></li>
+                            
+                                <li><a href="javascript:void(0);" data-mailhost="@payspun.com">@payspun.com</a></li>
+                            
+                                <li><a href="javascript:void(0);" data-mailhost="@beluckygame.com">@beluckygame.com</a></li>
+                            
+                                <li><a href="javascript:void(0);" data-mailhost="@thrubay.com">@thrubay.com</a></li>
+                            
+                                <li><a href="javascript:void(0);" data-mailhost="@claimab.com">@claimab.com</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-4 no-padding">
+                <p class="description">
+                    FakeMailGenerator provides fake, temporary, anonymous, disposable mail, to protect you from spam, advertising mailings.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <ul class="list-unstyled left-side clearfix">
+                    <li>
+                        <a href="javascript:" data-toggle="tooltip" data-placement="right" title="Copy email address to clipboard" id='trigger-copy'>
+                            <i class="fa fa-copy"></i>Copy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:manualRefresh()" data-toggle="tooltip" data-placement="right" title="Refresh message list">
+                            <i class="fa fa-refresh"></i>Refresh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:changeMailbox()" data-toggle="tooltip" data-placement="right" title="Change current email address">
+                            <i class="fa fa-edit"></i>Change
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-10 col-md-7 content">
+                <div class="table-responsive msglist">
+
+            <table class="table table-striped" style='z-index:5;'>
+                <thead>
+                <tr>
+                    <th class="col-md-5">Sender</th>
+                    <th class="col-md-6">Subject</th>
+                    <th class="col-md-1">View</th>
+                </tr>
+                </thead>
+                <tbody id="message-list">
+                  <tr> 
+                    <td colspan='3' class='text-center'>
+                      <img src="public\en\img\loading.gif" alt="Receiving mails...">&nbsp;Receiving mails...will be refreshed after <b id='seconds'></b> seconds
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+
+                </div>
+                <div class="site-description">
+                    <h2>What is Fake(Disposable/Temporary) Mail?</h2>
+                    <p><b>Fake mail</b>, it's a temporary mailbox that accepts email. Fake mail are also known as disposable email, temporary mail, throwaway email.</p>
+                    <p>Must register be able to get content on webpage? However, I only need this content this time. Will I receive advertising emails frequently when I register with my personal email address? Is the website I registered safe? Will my registration information be leaked? If you have these concerns, you're advised to use a fake mail. Unlike your personal email address, a temporary email address is completely free and anonymous (it's also acceptable to receive mail). Using a temporary mailbox allows you to avoid leaking your information, receiving too much advertising mailings and spam, and it can also avoid being tracked.</p>
+                </div>
+                <div class="bottom-show show1"></div>
+            </div>
+            <div class="hidden-sm col-md-3 no-padding">
+                <div class="show2"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 foot">
+                <p class='text-center'>With this tool, you can get secure, anonymous fake mail, temporary mail(tempmail), throwaway email that can receive emails within 10 seconds.</p>
+                <p class='text-center'>Copyright © 2018 FakeMailGenerator.net All rights reserved. <a href="cdn-cgi\l\email-protection.html#f49091829b9acccdc4ccb49399959d98da979b99">contact</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="loading-line"><span></span></div>
+<script data-cfasync="false" src="cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js"></script><script src='public\en\js\moment.min.js' type='text/javascript'></script>
+<script src='public\en\js\moment-timezone-with-data-2012-2022.min.js' type='text/javascript'></script>
+<script src='public\en\js\bootstrap.min.js' type='text/javascript'></script>
+<script src='public\en\js\clipboard.js' type='text/javascript'></script>
+<script src='public\en\js\index.js?2018011072' type='text/javascript'></script>
+<script type='text/javascript'>
+    $(function () {
+        $.get("/api/v1/mailbox/keepalive", function (resp) {
+            console.log(resp);
+            mailbox = resp.mailbox;
+            initMailAddr(getMailhost());
+            $('[data-toggle="tooltip"]').tooltip();
+            if (location.pathname.substr(0, "/mailbox".length) === "/mailbox") {
+                let dt = $('#message-date').text();
+                dt = dt.replace(' +0800 CST', '');
+                console.log(dt);
+                $('#message-date').text(moment.tz(dt, 'Asia/Shanghai').clone().tz('America/Los_Angeles').toString());
+            } else {
+                loadList();
+                countdown();
+            }
+
+            $('.dropdown-menu li').click(function () {
+                console.log($(this).text());
+                initMailAddr($(this).text());
+            });
+
+            $('#back-to-list').click(function (e) {
+                e.preventDefault();
+                let mailbox_path = '/';
+                
+                let pos = location.pathname.lastIndexOf("/");
+                if (pos > 0) {
+                    mailbox_path = location.pathname.substr(0, pos);
+                }
+                location.href = location.origin + mailbox_path + "?_ts=" + Math.round((new Date()).getTime() / 1000);
+            });
+
+            $('#active-mail').click(function () {
+                var my = $(this);
+                var clipboard = new ClipboardJS('#active-mail');
+                clipboard.on('success', function (e) {
+                    console.log(e);
+                    var lefttime = setInterval(TipTime, 1000);
+                    var left = 3;
+
+                    function TipTime() {
+                        if (left == 0) {
+                            $('#copy-title').text('Click to copy');
+                            clearInterval(lefttime);
+                        }
+                        left--;
+                    }
+
+                    my.select();
+                    $('#copy-title').text('Copied successfully');
+                });
+                clipboard.on('error', function (e) {
+                    $('#copy-title').text('Failed, please try again');
+
+                });
+            });
+            $('#trigger-copy').click(function () {
+                $('#active-mail').trigger('click');
+            });
+        });
+    });
+</script>
+</body>
+</html>

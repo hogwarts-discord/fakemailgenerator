@@ -1,0 +1,264 @@
+Uri: https://www.fakemailgenerator.net/
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\index.html
+Content Type: text/html
+
+Uri: https://www.fakemailgenerator.net/public/en/img/favicon.ico?11
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\img\favicon.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://www.fakemailgenerator.net/public/en/css/bootstrap.min.css
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://www.fakemailgenerator.net/public/en/css/font-awesome.min.css
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://www.fakemailgenerator.net/public/en/css/index.min.css?20180916
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\css\index.min.css
+Content Type: text/css
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/l/email-protection
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\l\email-protection.html
+Content Type: text/html
+
+Uri: https://www.fakemailgenerator.net/public/en/js/jquery.min.js
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\js\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://www.fakemailgenerator.net/public/en/img/logo.png
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\img\logo.png
+Content Type: image/png
+
+Uri: https://www.fakemailgenerator.net/public/en/img/loading.gif
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\img\loading.gif
+Content Type: image/gif
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js
+Content Type: application/javascript
+
+Uri: https://www.fakemailgenerator.net/public/en/js/moment.min.js
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\js\moment.min.js
+Content Type: application/javascript
+
+Uri: https://www.fakemailgenerator.net/public/en/js/moment-timezone-with-data-2012-2022.min.js
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\js\moment-timezone-with-data-2012-2022.min.js
+Content Type: application/javascript
+
+Uri: https://www.fakemailgenerator.net/public/en/js/bootstrap.min.js
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\js\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://www.fakemailgenerator.net/public/en/js/clipboard.js
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\js\clipboard.js
+Content Type: application/javascript
+
+Uri: https://www.fakemailgenerator.net/public/en/js/index.js?2018011072
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\js\index.js
+Content Type: application/javascript
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/glyphicons-halflings-regular.eot
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\glyphicons-halflings-regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/glyphicons-halflings-regular.eot?
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\glyphicons-halflings-regular-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/glyphicons-halflings-regular.woff2
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\glyphicons-halflings-regular.woff2
+Content Type: font/woff2
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/glyphicons-halflings-regular.woff
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\glyphicons-halflings-regular.woff
+Content Type: font/woff
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/glyphicons-halflings-regular.ttf
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\glyphicons-halflings-regular.ttf
+Content Type: font/ttf
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/glyphicons-halflings-regular.svg
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\glyphicons-halflings-regular.svg
+Content Type: image/svg+xml
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/fontawesome-webfont.eot?v=4.7.0
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/fontawesome-webfont.eot?
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/fontawesome-webfont.woff2?v=4.7.0
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\fontawesome-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/fontawesome-webfont.woff?v=4.7.0
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\fontawesome-webfont.woff
+Content Type: font/woff
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/fontawesome-webfont.ttf?v=4.7.0
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\fontawesome-webfont.ttf
+Content Type: font/ttf
+
+Uri: https://www.fakemailgenerator.net/public/en/fonts/fontawesome-webfont.svg?v=4.7.0
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\public\en\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/cf.errors.css
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\cf.errors.css
+Content Type: text/css
+
+Uri: https://support.cloudflare.com/hc/en-us/articles/200170016-What-is-Email-Address-Obfuscation-
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\hc\en-us\articles\200170016-What-is-Email-Address-Obfuscation-.html
+Content Type: text/html
+
+Uri: https://support.cloudflare.com/hc/en-us/categories/200275218-Getting-Started
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\hc\en-us\categories\200275218-Getting-Started.html
+Content Type: text/html
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/scripts/zepto.min.js
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\scripts\zepto.min.js
+Content Type: application/javascript
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/scripts/cf.common.js
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\scripts\cf.common.js
+Content Type: application/javascript
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300.eot
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300.eot?
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300.woff
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300.woff
+Content Type: application/font-woff
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300.ttf
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300.bin
+Content Type: application/octet-stream
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300.svg
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300.svg
+Content Type: image/svg+xml
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400.eot
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400.eot?
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400.woff
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400.woff
+Content Type: application/font-woff
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400.ttf
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400.bin
+Content Type: application/octet-stream
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400.svg
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400.svg
+Content Type: image/svg+xml
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-600.eot
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-600.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-600.eot?
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-600-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-600.woff
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-600.woff
+Content Type: application/font-woff
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-600.ttf
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-600.bin
+Content Type: application/octet-stream
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-600.svg
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-600.svg
+Content Type: image/svg+xml
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-700.eot
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-700.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-700.eot?
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-700-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-700.woff
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-700.woff
+Content Type: application/font-woff
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-700.ttf
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-700.bin
+Content Type: application/octet-stream
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-700.svg
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-700.svg
+Content Type: image/svg+xml
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300i.eot
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300i.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300i.eot?
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300i-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300i.woff
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300i.woff
+Content Type: application/font-woff
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300i.ttf
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300i.bin
+Content Type: application/octet-stream
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-300i.svg
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-300i.svg
+Content Type: image/svg+xml
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400i.eot
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400i.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400i.eot?
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400i-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400i.woff
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400i.woff
+Content Type: application/font-woff
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400i.ttf
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400i.bin
+Content Type: application/octet-stream
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/styles/fonts/opensans-400i.svg
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\styles\fonts\opensans-400i.svg
+Content Type: image/svg+xml
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/images/error_icons.png
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\images\error_icons.png
+Content Type: image/png
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/images/icon-exclamation.png?1376755637
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\images\icon-exclamation.png
+Content Type: image/png
+
+Uri: https://www.fakemailgenerator.net/cdn-cgi/images/browser-bar.png?1376755637
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\cdn-cgi\images\browser-bar.png
+Content Type: image/png
+
+Uri: https://www.cloudflare.com/5xx-error-landing/?utm_source=error_footer
+File Name: c:\Downloaded Web Sites\www.fakemailgenerator.net\5xx-error-landing\index.html
+Content Type: text/html
+
